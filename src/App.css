@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  background: #f5f5f5;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.screenshots {
+  margin: 2rem 0;
+}
+
+.screenshot-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.screenshot-row img {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.whats-next {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f0f8ff;
+  border-radius: 6px;
+}
