@@ -1,0 +1,168 @@
+{
+  "updated": "September 26, 2026",
+  "privacy": {
+    "title": "Privacy Policy",
+    "file": "privacy-standalone.html",
+    "intro": "This policy explains how the AmigoLocal mobile app for iOS and Android, provided by RedCalf, handles information. It applies to the app, including its chat, voice, notes, email assistant, document, and subscription features.",
+    "sections": [
+      {
+        "title": "1. Your conversations and on-device AI",
+        "paragraphs": [
+          "AmigoLocal runs its downloaded language models on your device. Text prompts, generated replies, text extracted from imported documents, and text you ask the model to polish are processed locally, rather than sent to an AmigoLocal AI server. You do not need an AmigoLocal account.",
+          "The app does not include advertising or analytics tracking of your conversations. This does not mean every feature operates without a network connection: downloads, purchases, external apps, and device speech services are described below."
+        ]
+      },
+      {
+        "title": "2. Information stored on your device",
+        "paragraphs": [
+          "The app stores chat history, saved conversation threads, notes, preferences, downloaded models, and, if enabled, your app PIN on your device. It also stores trial and subscription status and daily feature-usage counts locally. These counts enforce the free plan’s allowances; they are not conversation analytics sent to us.",
+          "Local storage is not a promise of additional encryption. Device security, operating-system access, and any device backups you enable can affect the protection and retention of local information."
+        ]
+      },
+      {
+        "title": "3. Microphone and speech features",
+        "paragraphs": [
+          "Voice input requires microphone permission. On iOS, speech recognition permission is also required. The app uses a third-party speech library and the device’s speech recognition services to turn speech into text, and a bundled voice model to read text aloud.",
+          "Speech processing and offline availability depend on your operating system, speech provider, device, and language. The app does not enforce an on-device-only recognition mode, so audio may be processed by your device’s speech service under that provider’s privacy terms. You can decline or revoke these permissions in device settings and continue using text features."
+        ]
+      },
+      {
+        "title": "4. Documents, copying, and email",
+        "paragraphs": [
+          "When you select a supported document, the app reads its contents for local document questions. It does not upload the document to an AmigoLocal server. Selecting a file from a cloud storage provider may involve that provider downloading the file to your device.",
+          "Copy actions place selected text on your device clipboard. The email assistant lets you copy the drafted subject and body for use in another app. Information you choose to paste, share, or send outside AmigoLocal is then subject to the destination app’s practices."
+        ]
+      },
+      {
+        "title": "5. Downloads and purchases",
+        "paragraphs": [
+          "AI model downloads connect to Hugging Face and its delivery infrastructure. These services receive the network information needed to serve a download, such as your IP address and the requested file. Model downloads do not require sending your conversations.",
+          "Apple App Store or Google Play handles in-app purchases, payments, restoration, and subscription management. The app receives purchase information and entitlement status from the store; it does not collect your payment card details. The relevant store and download provider handle their information under their own privacy policies."
+        ]
+      },
+      {
+        "title": "6. Your controls and retention",
+        "paragraphs": [
+          "You can delete messages, saved threads, and notes using the app’s controls, and remove downloaded models in Settings. Clearing the current chat does not delete separately saved threads or notes; delete those separately when needed.",
+          "Removing the app or clearing its app data removes local data subject to your operating system’s behavior. Backups and files held by other apps are managed separately. Uninstalling does not cancel a store subscription. We do not hold a server copy of your local chats that we can recover or delete for you."
+        ]
+      },
+      {
+        "title": "7. Contact and privacy requests",
+        "paragraphs": [
+          "For privacy questions or requests, contact RedCalf at redcalf2007@gmail.com. If you email support, the email service processes your address, message, and any attachments, and we use that correspondence to respond. Share only the information needed for your request.",
+          "Depending on where you live, you may have rights to access, correct, delete, or restrict the use of personal information, or to complain to a data protection authority. Contact us about information you have sent to us; use the app and device controls for information stored only on your device."
+        ]
+      },
+      {
+        "title": "8. Changes to this policy",
+        "paragraphs": [
+          "This policy may be updated when the app or its information practices change. The date above identifies the latest version. Material changes will be communicated as required by applicable law."
+        ]
+      }
+    ],
+    "links": [
+      { "label": "Contact RedCalf", "href": "mailto:redcalf2007@gmail.com" },
+      {
+        "label": "Apple Privacy Policy",
+        "href": "https://www.apple.com/legal/privacy/"
+      },
+      {
+        "label": "Google Privacy Policy",
+        "href": "https://policies.google.com/privacy"
+      },
+      {
+        "label": "Hugging Face Privacy Policy",
+        "href": "https://huggingface.co/privacy"
+      },
+      { "label": "AmigoLocal Terms of Use", "href": "/eula-standalone.html" }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "file": "eula-standalone.html",
+    "intro": "These Terms of Use apply to the AmigoLocal mobile app for iOS and Android, provided by RedCalf. By using the app, you agree to these terms. If you do not agree, discontinue use.",
+    "sections": [
+      {
+        "title": "1. Using AmigoLocal",
+        "paragraphs": [
+          "You may use the app on a compatible device for lawful purposes, subject to these terms, the applicable app store’s rules, and any licenses that apply to downloaded models or other third-party components. Do not misuse the app, infringe others’ rights, or bypass purchase or access restrictions. Nothing here limits activities permitted by applicable law.",
+          "You are responsible for the content you enter or import and for having permission to use it. You retain your rights in your own content. If you are not legally able to agree to these terms yourself, use the app only with appropriate parent or guardian authorization and in accordance with store age requirements."
+        ]
+      },
+      {
+        "title": "2. On-device operation and requirements",
+        "paragraphs": [
+          "The app requires a model download before local AI generation is available. Downloads can be large and may incur network charges. Adequate storage and working memory are required, and performance varies by device and model.",
+          "Text generation runs locally after model setup. Model downloads, store functions, and some speech services may need internet. Voice features depend on device permissions and speech support. Features may change between app versions or differ by platform."
+        ]
+      },
+      {
+        "title": "3. Free features and trial",
+        "paragraphs": [
+          "The free plan includes Smarty chat and limited daily access to additional tools. The current app provides unlimited Smarty chat, 10 minutes of dictation, 3 email polishes, 10 note polishes, and 5 document questions per day. Dictation time is shared across microphone features, and daily allowances reset at local midnight.",
+          "A seven-day trial tracked locally in the app provides access to Premium features. The local trial itself does not create or automatically convert into a paid subscription. After it ends, the free plan applies unless you choose to purchase Premium. The app’s current offer and store checkout explain the available plans."
+        ]
+      },
+      {
+        "title": "4. Premium subscriptions and payment",
+        "paragraphs": [
+          "Premium offers access to all three models and removes the free plan’s daily feature allowances. Monthly and yearly subscriptions are purchased through Apple App Store or Google Play. The store checkout displays the applicable price, currency, billing period, and any offer conditions before you confirm.",
+          "Paid subscriptions renew automatically unless canceled through the store under its applicable terms. Manage or cancel through the store account used to purchase. Deleting the app does not cancel a subscription. Use Restore Purchases in the app when needed. Refund requests and billing disputes are handled under the relevant store’s policies and applicable law."
+        ]
+      },
+      {
+        "title": "5. AI limitations and your decisions",
+        "paragraphs": [
+          "AI output can be inaccurate, incomplete, outdated, or inappropriate. Check generated text and document answers before using them, sending them, or making decisions. Responses are not a substitute for qualified medical, legal, financial, or other professional advice.",
+          "The app does not guarantee that a particular model will produce a correct answer or fit every document or task. You are responsible for reviewing and deciding how to use its output."
+        ]
+      },
+      {
+        "title": "6. Privacy and local data",
+        "paragraphs": [
+          "The Privacy Policy explains local storage, speech services, model downloads, purchases, and information you choose to share. You are responsible for your device’s security and for keeping any copies of content you need. Deleting local data or removing the app may cause loss of saved content that RedCalf cannot restore."
+        ]
+      },
+      {
+        "title": "7. Availability, warranties, and liability",
+        "paragraphs": [
+          "To the extent permitted by applicable law, AmigoLocal is provided as available, without a guarantee of uninterrupted operation, error-free results, or fitness for a particular purpose. RedCalf is not responsible for losses caused by reliance on inaccurate AI output or by circumstances outside its reasonable control, to the extent the law permits that limitation.",
+          "Nothing in these terms excludes mandatory consumer rights or liability that cannot legally be excluded. Your rights concerning defective digital content, refunds, and other statutory remedies remain in place."
+        ]
+      },
+      {
+        "title": "8. Third-party and store terms",
+        "paragraphs": [
+          "Downloaded models, speech components, operating-system services, and external apps may be subject to separate terms and licenses. Your use of Apple App Store or Google Play is also governed by that store’s applicable terms. For an app obtained through Apple, Apple’s standard Licensed Application End User License Agreement applies where applicable."
+        ]
+      },
+      {
+        "title": "9. Changes and contact",
+        "paragraphs": [
+          "We may update the app and these terms as features or requirements change. The date above identifies this version. Material changes will be communicated as required by law and do not override mandatory rights or the terms of a purchase already made.",
+          "For support or questions about these terms, contact RedCalf at redcalf2007@gmail.com."
+        ]
+      }
+    ],
+    "links": [
+      { "label": "Contact RedCalf", "href": "mailto:redcalf2007@gmail.com" },
+      {
+        "label": "Manage Apple subscriptions",
+        "href": "https://support.apple.com/118428"
+      },
+      {
+        "label": "Manage Google Play subscriptions",
+        "href": "https://support.google.com/googleplay/answer/7018481"
+      },
+      {
+        "label": "Apple standard app license",
+        "href": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+      },
+      {
+        "label": "AmigoLocal Privacy Policy",
+        "href": "/privacy-standalone.html"
+      }
+    ]
+  }
+}
