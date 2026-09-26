@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# AmigoLocal website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React/TypeScript website for the AmigoLocal iOS and Android app.
 
-## Available Scripts
+## Run and verify
 
-In the project directory, you can run:
+```sh
+npm install
+npm start
+npm test -- --watchAll=false --runInBand
+npm run build
+node scripts/generate-legal.cjs --check
+```
 
-### `npm start`
+Netlify publishes `build/`. Its SPA fallback supports direct visits to `/privacy`, `/terms`, and `/support`. Assets use absolute paths so nested routes load correctly. Node 22 is configured for the installed React Router version. Jest's module mapping supports React Router's `dom` export with the existing Create React App test runner; Watchman is disabled for portable test runs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Store links
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The existing iOS link is preserved in `src/App.tsx`. Set `REACT_APP_GOOGLE_PLAY_URL` to the confirmed Google Play listing URL in `.env.local` (see `.env.example`) or the Netlify build environment, then rebuild. Without that setting, the Android button says “Available for Android / Get in touch” and opens a support email; it does not imply that a store link has been verified.
 
-### `npm test`
+## App policies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Edit `src/legal.json` for both policies. React renders that same content at `/privacy` and `/terms`. `npm run generate:legal` produces standalone HTML that works without JavaScript:
 
-### `npm run build`
+- `/privacy-standalone.html`
+- `/eula-standalone.html`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These exact URLs are already referenced by `AmigoLocal/utils/subscriptionConfig.ts`. The build regenerates the documents automatically; `public/legal.css` styles them independently of the marketing site. Netlify serves the real HTML files before its SPA fallback.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Content sources
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Website descriptions were checked against the adjacent app's implementation:
 
-### `npm run eject`
+- `App.tsx`, `ThreadsDrawer.tsx`: local chat and saved threads.
+- `utils/VoiceService.ts`, `dictate.tsx`: speech input and read-aloud behavior. Speech recognition depends on device services; do not promise that every voice interaction stays offline.
+- `EmailAssistant.tsx`: guided subject/body dictation, polishing, copying, and read-back. Sending happens outside AmigoLocal after the user copies the draft.
+- `NotesScreen.tsx`, `utils/notesStore.ts`: locally saved notes and AI polishing.
+- `SpecialAmigo.tsx` and native PDF modules: text and PDF questions. DOCX parsing is a placeholder and is not advertised.
+- `constants.ts`: Smarty (1.1 GB), Gema (1.6 GB), TriGema (2.8 GB).
+- `utils/freeTierConfig.ts`, `utils/subscriptionConfig.ts`: daily free allowances, Premium access, seven-day local trial, and subscriptions. Prices are deliberately left to store checkout.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+All four original September 26, 2026 simulator screenshots in `public/` appear in the gallery. The conversation screenshot is also used in the hero. Existing image files remain available.
