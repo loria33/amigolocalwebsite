@@ -22,7 +22,7 @@ for (const key of ["privacy", "terms"]) {
     page.title
   )} for the AmigoLocal app on iOS and Android.">
   <title>${escape(page.title)} · AmigoLocal</title>
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/amigo-favicon.ico">
   <link rel="stylesheet" href="/legal.css">
 </head>
 <body>
