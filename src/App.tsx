@@ -8,7 +8,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import legal from "./legal.json";
-import "./App.css";
 
 const APP_STORE = "https://apple.co/4lfDUpI";
 const PLAY_STORE = process.env.REACT_APP_GOOGLE_PLAY_URL;
@@ -185,12 +184,6 @@ function Home() {
       title: "Less typing. More talking.",
       text: "Dictate a thought, pause and continue, or have a reply read aloud. Voice input uses your device’s speech services.",
       tag: "Voice & dictation",
-    },
-    {
-      icon: "mail",
-      title: "From spoken thought to email.",
-      text: "Dictate a subject and body with guided voice commands. Polish the wording, read it back, then copy it into your email app.",
-      tag: "Email assistant",
     },
     {
       icon: "note",
